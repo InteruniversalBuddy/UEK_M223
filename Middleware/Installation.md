@@ -1,0 +1,159 @@
+https://lernen.zbw.ch/mod/page/view.php?id=73077
+
+---
+# Schritt 1
+Neue Migration erstellen "2025_08_28_000002_create_record_locks_table.php":
+```php
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    public function up(): void {
+        Schema::create('record_locks', function (Blueprint $table) {
+            $table->id();
+            $table->string('table_name');
+            $table->unsignedBigInteger('record_id');
+            $table->foreignId('locked_by')->constrained('user')->cascadeOnDelete();
+            $table->timestamp('locked_at')->index();
+            $table->unique(['table_name', 'record_id']);
+        });
+    }
+    public function down(): void {
+        Schema::dropIfExists('record_locks');
+    }
+};
+
+```
+Neuen Model erstellen "RecordLock.php":
+```php
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    public function up(): void {
+        Schema::create('record_locks', function (Blueprint $table) {
+            $table->id();
+            $table->string('table_name');
+            $table->unsignedBigInteger('record_id');
+            $table->foreignId('locked_by')->constrained('user')->cascadeOnDelete();
+            $table->timestamp('locked_at')->index();
+            $table->unique(['table_name', 'record_id']);
+        });
+    }
+    public function down(): void {
+        Schema::dropIfExists('record_locks');
+    }
+};
+
+```
+# Schritt 2
+Neue Middleware (app/Http/Middleware/) Datei erstellen "CheckRecordLocks.php":
+```php
+<?php
+
+namespace App\Http\Middleware;
+
+use App\Models\RecordLock;
+use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+class CheckRecordLocks
+{
+    public function handle(Request $request, Closure $next): Response
+    {
+        $id = $request->route('id') ?? $request->route('record');
+        $lock = RecordLock::where('table_name', 'cars')
+            ->where('record_id', $id)->first();
+
+        if ($lock && (int) $lock->locked_by !== (int) auth()->id()) {
+            return response()->json(['message' => 'Dieser Datensatz ist gesperrt.'], 423);
+        }
+        return $next($request);
+    }
+}
+```
+
+Neue Datei (app/Http) Datei erstellen "Kernel.php":
+```php
+<?php
+
+$routeMiddleware = [
+    // ...
+    'record.lock' => \App\Http\Middleware\CheckRecordLocks::class,
+];
+```
+# Schritt 3
+EditCar.php bearbeiten:
+*Der `$resource` String muss evtl. angepasst werden, am besten gleich wie die von vorher mittels use.*
+```php
+<?php
+
+namespace App\Filament\Admin\Resources\Cars\Pages;
+use App\Filament\Admin\Resources\Cars\CarResource;
+use Filament\Resources\Pages\EditRecord;
+use App\Models\RecordLock;
+use Filament\Notifications\Notification;
+use Illuminate\Support\Facades\Auth;
+
+class EditCar extends EditRecord
+{
+    protected static string $resource = CarResource::class;
+
+    public function mount($record): void
+    {
+        parent::mount($record);
+
+        // Abgelaufene Locks (älter 2 Min) entfernen
+        RecordLock::where('table_name','car')
+            ->where('locked_at','<', now()->subMinutes(2))->delete();
+
+        $lock = RecordLock::where('table_name','car')
+            ->where('record_id', $this->record->id)->first();
+
+        if ($lock && (int) $lock->locked_by !== (int) Auth::id()) {
+            Notification::make()->danger()
+                ->title('Dieser Datensatz ist derzeit in Bearbeitung.')
+                ->send();
+            $this->redirect(static::getResource()::getUrl('index'));
+            return;
+        }
+
+        RecordLock::updateOrCreate(
+            ['table_name'=>'car','record_id'=>$this->record->id],
+            ['locked_by'=>Auth::id(),'locked_at'=>now()]
+        );
+    }
+
+    protected function afterSave(): void
+    {
+        $this->releaseLock();
+    }
+
+    public function cancel(): void
+    {
+        $this->releaseLock();
+        parent::cancel();
+    }
+
+    protected function releaseLock(): void
+    {
+        RecordLock::where('table_name','car')
+            ->where('record_id',$this->record->id)
+            ->where('locked_by', Auth::id())
+            ->delete();
+    }
+
+    public function getRedirectUrl(): string
+    {
+        return static::getResource()::getUrl('index');
+    }
+}
+
+```
