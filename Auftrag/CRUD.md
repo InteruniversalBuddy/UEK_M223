@@ -1,0 +1,37 @@
+# Panels erstellen
+```bash
+ddev php artisan make:filament-resource Car --generate --panel=admin
+```
+Bei der Auswahl wie "CarResource" wählen.
+
+Erstellt:
+- `app/Filament/Resources/CarResource.php`  
+- `app/Filament/Resources/CarResource/Pages/ListCars.php`  
+- `app/Filament/Resources/CarResource/Pages/CreateCar.php`  
+- `app/Filament/Resources/CarResource/Pages/EditCar.php`
+## Anpassung
+Im Fall das ein Error gibt, beim Seeden mit "Default fehlt" muss im Code von `app/Providers/Filament/AdminPanelProvider.php` so angepasst werden:
+```php
+<?php
+
+namespace App\Providers\Filament;
+// use
+
+class AdminPanelProvider extends PanelProvider
+{
+    public function panel(Panel $panel): Panel
+    {
+        return $panel
+            ->default() // diese Zeile hier
+            ->id('admin')
+            ->path('admin')
+            ->colors([
+                'primary' => Color::Amber,
+            ])
+            // Code
+    }
+}
+
+```
+
+Es muss evtl. im Model die `$fillable` Variable angepasst werden.

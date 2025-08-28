@@ -1,0 +1,54 @@
+# Tag 1
+---
+- [x] VM einrichten
+	- [x] **Obsidian: Diagrams.Net installieren**
+	- [x] **VSC: Swagger Viewer inst**
+	- [x] **Postman: Login erstellen**
+	- [x] VM kopieren
+- [x] [[DDEV]] Tests
+	- [x] Start
+	- [x] Stop
+- [x] Laravel start
+	- [x] Start
+	- [x] Login (login.md von Laravel)
+- [ ] Was ist Tailwind 
+- [x] [[Laravel Projekt init|Projekt start]]
+	- [x] VSC Projekt erstellen
+	- [x] Projekt init
+	- [x] Laravel starten
+- [ ] [[Projekt Veraendern|Projekt Verändern]]
+	- [x] Text Willkommen Seite
+	- [ ] Farben anpassen
+	- [ ] Ressourcen neu bauen & testen
+
+# Tag 2
+---
+- [x] Login
+	- [x] Breeze installieren
+	- [x] Auth methoden installieren
+	- [x] Testen
+- [x] Routing
+	- [x] Custom Return
+	- [x] Formular
+	- [x] Image
+- [x]  Rent A Car app (Tag 2)
+	- [x] DBeaver verbindung
+	- [x] Diagram erstellen
+	- [x] Diagram umsetzten ([[Aufgabe Migrations|Migration]])
+		- [x] User
+		- [x] Reservation
+		- [x] Car
+# Tag 3
+---
+- [x] Rent A Car App (Tag 3)
+	- [x] [[Aufgabe Seeders|Seeders]]
+	- [x] [[Aufgabe Factories|Factories]]
+	- [x] [[JSON-Ausgabe|JSON Ausgabe]]
+- [x] [[Filament]]
+- [x] [[CRUD]]
+	- [x] Car
+	- [x] User
+	- [x] Resevation
+	- [x] Testen + Bugfix
+- [ ] Filament erweiterung
+- [ ] 

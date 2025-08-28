@@ -1,0 +1,15 @@
+https://lernen.zbw.ch/mod/book/view.php?id=73015
+[[DDEV]]
+
+---
+```
+composer global require laravel/installer
+composer create-project laravel/laravel Projekt1
+
+ddev config
+ddev start
+
+DDEV composer install
+```
+Von Projekt HalloAuto-3 den APP_KEY in .env kopiert und beim neuen Projekt eingefügt.
+Webseite geöffnet und "Deploy Now" gewählt
