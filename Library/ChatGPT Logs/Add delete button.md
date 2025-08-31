@@ -13,7 +13,7 @@ class CarsTable
     public static function configure(Tables\Table $table): Tables\Table
     {
         return $table
-            ->columns([hehehe
+            ->columns([
                 // deine Spalten
             ])
             ->actions([

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Rent a Car/4. Aufgabe Factories.md",
+                "file": "2. Middleware/Delete Button.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Aufgabe Factories"
+              "title": "Delete Button"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Filament",
+                "query": "he",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -169,22 +170,23 @@
       "bases:Create new base": false
     }
   },
-  "active": "cbe83706c28f6b1e",
+  "active": "95a9f198ca45c8aa",
   "lastOpenFiles": [
-    "1. Rent a Car/3. Aufgabe Seeders.md",
+    "Library/ChatGPT Logs/Add delete button.md",
+    "2. Middleware/Delete Button.md",
+    "Installs/5. Middleware.md",
+    "Auftrag/4. CRUD.md",
+    "Installs/4. Filament install.md",
+    "1. Rent a Car/5. JSON-Ausgabe.md",
     "1. Rent a Car/4. Aufgabe Factories.md",
     "1. Rent a Car/Models.md",
-    "1. Rent a Car/5. JSON-Ausgabe.md",
+    "1. Rent a Car/3. Aufgabe Seeders.md",
     "Auftrag/3. Filament.md",
     "Installs/2. Breeze.md",
     "Installs/1. Laravel Projekt init.md",
     "Auftrag/Filament Erweiturng.md",
-    "Auftrag/4. CRUD.md",
     "1. Rent a Car/2. Aufgabe Migrations.md",
-    "Library/ChatGPT Logs/Add delete button.md",
     "Installs/3. Blade.md",
-    "Installs/4. Filament install.md",
-    "Installs/5. Middleware.md",
     "Auftrag/1. Projekt Veraendern.md",
     "Auftrag/2. Breeze_and_Blade.md",
     "_IMPORTANT/TODO.md",
@@ -192,7 +194,6 @@
     "IMPORTANT/Untitled.md",
     "Middleware/Untitled",
     "Rent a Car/Untitled.md",
-    "2. Middleware/Delete Button.md",
     "Notizen/DDEV.md",
     "1. Rent a Car/1. ERD.md",
     "1. Rent a Car/Diagram.svg",
