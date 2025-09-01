@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6. Testing/2. Failed Tests mit Loesung/Authantication User.md",
+                "file": "5. Rollen und Rechte/2. Abteilungs- & Berechtigungssystem (spatie).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Authantication User"
+              "title": "2. Abteilungs- & Berechtigungssystem (spatie)"
             }
           }
         ],
@@ -188,12 +188,13 @@
   },
   "active": "22a70174087d4d91",
   "lastOpenFiles": [
-    "6. Testing/2. Failed Tests mit Loesung/Authanticate using login screen.md",
+    "5. Rollen und Rechte/1. Migration Erstellen.md",
+    "5. Rollen und Rechte/2. Abteilungs- & Berechtigungssystem (spatie).md",
+    "1. Installs/6. Spatie.md",
     "6. Testing/2. Failed Tests mit Loesung/Authantication User.md",
+    "6. Testing/2. Failed Tests mit Loesung/Authanticate using login screen.md",
     "6. Testing/2. Failed Tests mit Loesung/README.md",
     "6. Testing/1. PHPUnit - CarController.md",
-    "1. Installs/6. Spatie.md",
-    "5. Rollen und Rechte/Abteilungs- & Berechtigungssystem (spatie).md",
     "5. Rollen und Rechte",
     "6. Testing/3. Testumfang.md",
     "6. Testing/2. Failed Tests mit Loesung",
@@ -219,7 +220,6 @@
     "2. Rent a Car/5. JSON-Ausgabe.md",
     "0. Library/Images/Pasted image 20250901104842.png",
     "0. Library/Images",
-    "2. Rent a Car/3. Aufgabe Seeders.md",
     "0. Library/Probleme",
     "Middleware/Untitled",
     "2. Rent a Car/Diagram.svg",
