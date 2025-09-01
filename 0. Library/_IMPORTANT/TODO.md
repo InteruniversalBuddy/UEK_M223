@@ -50,8 +50,14 @@
 	- [x] User
 	- [x] Resevation
 	- [x] Testen + Bugfix
+- [ ] Filament erweiterung
+- [x] [[1. Aufsetzen|Middleware]]
+	- [x] Schritt 1
+	- [x] Schritt 2
+	- [x] Schritt 3
+	- [x] [[2. Delete Button|Delete Button]]
 # Tag 4
 ---
-- [ ] Filament erweiterung
-- [ ] Middleware
-	- [ ] 
+- [ ] Rollen & Rechte
+	- [ ] a
+- [ ] Testing
