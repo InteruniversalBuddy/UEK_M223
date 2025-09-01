@@ -24,35 +24,21 @@
             }
           },
           {
-            "id": "db8713fb16c954e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6. Testing/1. PHPUnit - CarController.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1. PHPUnit - CarController"
-            }
-          },
-          {
             "id": "22a70174087d4d91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6. Testing/3. Testumfang.md",
+                "file": "1. Installs/6. Spatie.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Testumfang"
+              "title": "6. Spatie"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,9 +188,12 @@
   },
   "active": "22a70174087d4d91",
   "lastOpenFiles": [
+    "5. Rollen und Rechte/Abteilungs- & Berechtigungssystem (spatie).md",
+    "1. Installs/6. Spatie.md",
     "6. Testing/1. PHPUnit - CarController.md",
-    "6. Testing/2. Failed Tests mit Loesung/Authanticate using login screen.md",
+    "5. Rollen und Rechte",
     "6. Testing/3. Testumfang.md",
+    "6. Testing/2. Failed Tests mit Loesung/Authanticate using login screen.md",
     "6. Testing/2. Failed Tests mit Loesung",
     "0. Library/_IMPORTANT/Checkliste.md",
     "0. Library/Notizen/Test.md",
@@ -232,14 +221,11 @@
     "2. Rent a Car/2. Aufgabe Migrations.md",
     "2. Rent a Car/1. ERD.md",
     "0. Library/Probleme",
-    "1. Installs/4. Filament install.md",
-    "Library/Notizen/Kurstage/Tag 1.md",
     "Middleware/Untitled",
     "2. Rent a Car/Diagram.svg",
     "1. Installs",
     "0. Library/ChatGPT Logs",
     "0. Library",
-    "4. Middleware",
     "Notizen/Untitled.canvas"
   ]
 }
