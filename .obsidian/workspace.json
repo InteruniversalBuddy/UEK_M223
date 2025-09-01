@@ -11,14 +11,12 @@
             "id": "cbe83706c28f6b1e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "2. Middleware/Delete Button.md",
-                "mode": "source",
-                "source": false
+                "file": "0. Library/Images/Pasted image 20250901104842.png"
               },
-              "icon": "lucide-file",
-              "title": "Delete Button"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250901104842"
             }
           }
         ]
@@ -53,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "he",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +72,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,45 +167,46 @@
       "bases:Create new base": false
     }
   },
-  "active": "95a9f198ca45c8aa",
+  "active": "f71ab1513ce45985",
   "lastOpenFiles": [
-    "Library/ChatGPT Logs/Add delete button.md",
-    "2. Middleware/Delete Button.md",
-    "Installs/5. Middleware.md",
-    "Auftrag/4. CRUD.md",
-    "Installs/4. Filament install.md",
-    "1. Rent a Car/5. JSON-Ausgabe.md",
-    "1. Rent a Car/4. Aufgabe Factories.md",
-    "1. Rent a Car/Models.md",
-    "1. Rent a Car/3. Aufgabe Seeders.md",
-    "Auftrag/3. Filament.md",
-    "Installs/2. Breeze.md",
-    "Installs/1. Laravel Projekt init.md",
-    "Auftrag/Filament Erweiturng.md",
-    "1. Rent a Car/2. Aufgabe Migrations.md",
-    "Installs/3. Blade.md",
-    "Auftrag/1. Projekt Veraendern.md",
-    "Auftrag/2. Breeze_and_Blade.md",
-    "_IMPORTANT/TODO.md",
-    "_IMPORTANT/Links.md",
-    "IMPORTANT/Untitled.md",
+    "0. Library/Images",
+    "2. Rent a Car/3. Aufgabe Seeders.md",
+    "2. Rent a Car/2. Aufgabe Migrations.md",
+    "2. Rent a Car/1. ERD.md",
+    "3. Auftrag/1. Projekt Veraendern.md",
+    "3. Auftrag/2. Breeze_and_Blade.md",
+    "3. Auftrag/4. CRUD.md",
+    "0. Library/Probleme/Register.md",
+    "0. Library/Images/Pasted image 20250901104842.png",
+    "0. Library/Notizen/DDEV.md",
+    "0. Library/Probleme",
+    "0. Library/Notizen/Untitled.md",
+    "0. Library/Notizen/Einstieg.md",
+    "4. Middleware/1. Aufsetzen.md",
+    "2. Rent a Car/4. Aufgabe Factories.md",
+    "2. Rent a Car/5. JSON-Ausgabe.md",
+    "1. Installs/4. Filament install.md",
+    "1. Installs/5. Middleware.md",
+    "4. Middleware/2. Delete Button.md",
+    "3. Auftrag/3. Filament.md",
+    "Library/Notizen/Kurstage/Tag 1.md",
+    "2. Middleware/Untitled.md",
+    "1. Installs/3. Blade.md",
+    "1. Installs/2. Breeze.md",
+    "2. Rent a Car/Models.md",
+    "1. Installs/1. Laravel Projekt init.md",
+    "0. Library/ChatGPT Logs/Add delete button.md",
+    "3. Auftrag/Filament Erweiturng.md",
     "Middleware/Untitled",
-    "Rent a Car/Untitled.md",
-    "Notizen/DDEV.md",
-    "1. Rent a Car/1. ERD.md",
-    "1. Rent a Car/Diagram.svg",
-    "Installs/Reihenfolge.md",
-    "Installs",
-    "Library/ChatGPT Logs",
-    "Library",
-    "2. Middleware",
-    "Notizen/Einstieg.md",
-    "Notizen/Kurstage/Tag 1.md",
+    "2. Rent a Car/Diagram.svg",
+    "1. Installs",
+    "0. Library/ChatGPT Logs",
+    "0. Library",
+    "4. Middleware",
     "Auftrag/Rent A Car",
-    "1. Rent a Car/Diagram.svg.xml",
-    "1. Rent a Car",
-    "Auftrag",
-    "_IMPORTANT",
+    "2. Rent a Car/Diagram.svg.xml",
+    "2. Rent a Car",
+    "3. Auftrag",
     "Notizen/Untitled.canvas"
   ]
 }
